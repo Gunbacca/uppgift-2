@@ -1,3 +1,4 @@
+@import "color.ccs";
 .container{
     display: grid;
     height: 100vh;
@@ -6,17 +7,21 @@
     
     grid-template-areas: 
     ". header header ."
-    ". main main ."
-    ". aside aside ."
+    ". nav nav ."
+    ". main aside ."
     ". footer footer .";
 }
 header{
     grid-area: header;
     background-color: rgb(84, 238, 46);
 }
+nav{
+    grid-area: nav;
+    background-color: rgb(83, 26, 136);
+}
 main{
     grid-area: main;
-    background-color: black;
+    background-color: rgb(36, 14, 236);
 }
 aside{
 grid-area: aside;
@@ -25,4 +30,21 @@ background-color: brown;
 footer{
     grid-area: footer;
     background-color: aquamarine;
+}
+
+@media (max-width:500px)
+{
+    .container{
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns:1% 1fr 1%;
+        grid-template-rows: auto auto auto auto auto;
+        
+        grid-template-areas: 
+        ". header  ."
+        ". nav ."
+        ". main ."
+        ". aside ."
+        ". footer .";
+    }
 }
