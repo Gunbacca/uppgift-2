@@ -22,7 +22,6 @@ header{
 }
 .navbar{
     top: 50px;
-    position: sticky;
     grid-area: nav;
 }
 .navbar ul{
@@ -43,7 +42,7 @@ header{
     font-size: large;
 }
 .navbar a:hover {
-    background-color: #444;
+    background-color: var(--primary-color);
     transition: 1s;
 }
 .navbar li {
@@ -53,6 +52,7 @@ main{
     grid-area: main;
     background-color:var(--primary-color);
     color: var(--text-color);
+    padding: 10px;
 }
 aside{
 grid-area: aside;
@@ -63,12 +63,18 @@ footer{
     grid-area: footer;
     background-color: var(--background-color);
     color: var(--text-color);
+    text-align: center;
 }
 img{
-    height: 600px;
-    width: 850px;
+    height: 88%;
+    width: 97%;
     margin-top: 35px;
     margin-right: 35px;
+    border-radius: 5%;
+    
+}
+#kontakta{
+    font-size: x-large;
 }
 
 @media (max-width:500px)
@@ -86,4 +92,5 @@ img{
         ". aside ."
         ". footer .";
     }
+    
 }
