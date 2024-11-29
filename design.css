@@ -77,6 +77,33 @@ img{
     font-size: x-large;
 }
 
+.form{
+
+    width: 40%;
+}
+
+.innerform{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.innerform label{
+    width: 30%;
+}
+input{
+    width:50%
+}
+textarea{
+    width: 100%;
+}
+#button{
+    width: 12%;
+    margin-left: 68%;
+}
+#message{
+    width: 80%;
+}
 @media (max-width:500px)
 {
     .container{
