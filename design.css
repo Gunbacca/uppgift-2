@@ -78,21 +78,19 @@ img{
 }
 
 .form{
-
     width: 40%;
 }
 
 .innerform{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .innerform label{
     width: 30%;
 }
 input{
-    width:50%
+    width:50%;
 }
 textarea{
     width: 100%;
